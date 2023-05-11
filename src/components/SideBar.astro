@@ -1,5 +1,6 @@
 ---
 import { Image } from "@astrojs/image/components";
+import { BASE_URL } from './../config';
 ---
 
 <div class="drawer-side bg-base-200">
@@ -8,7 +9,7 @@ import { Image } from "@astrojs/image/components";
     class="menu flex flex-col flex-nowrap p-4 overflow-y-auto w-[20rem] bg-base-200 text-base-content"
   >
     <div class="w-fit">
-      <a href="/">
+      <a href=`${BASE_URL}/`>
         <div
           class="avatar transition ease-in-out w-1/2 hover:scale-[102%] block m-auto mt-3 mb-6 h-36"
         >
@@ -28,13 +29,13 @@ import { Image } from "@astrojs/image/components";
     </div>
     <ul class="grow shrink">
       <!-- Sidebar content here -->
-      <li><a id="home" href="/">Home</a></li>
-      <li><a id="projects" href="/projects">Projects</a></li>
-      <li><a id="services" href="/services">Services</a></li>
+      <li><a id="home" href=`${BASE_URL}/`>Home</a></li>
+      <li><a id="projects" href=`${BASE_URL}/projects`>Projects</a></li>
+      <li><a id="services" href=`${BASE_URL}/services`>Services</a></li>
       <li><a id="store" href="#">Store (coming soon)</a></li>
-      <!-- <li><a id="blog" href="/blog/">Blog</a></li> -->
-      <li><a id="blog" href="/#">Blog (coming soon)</a></li>
-      <li><a id="cv" href="/cv">CV</a></li>
+      <!-- <li><a id="blog" href=`${BASE_URL}/blog`">Blog</a></li> -->
+      <li><a id="blog" href=`${BASE_URL}/#`>Blog (coming soon)</a></li>
+      <li><a id="cv" href=`${BASE_URL}/cv`>CV</a></li>
       <li><a href="mailto:jackandrewg@gmail.com">Contact</a></li>
     </ul>
     <div class="social-icons px-4 my-2 flex self-center">
@@ -116,7 +117,7 @@ import { Image } from "@astrojs/image/components";
       </a>
 
       <!-- <a
-        href="/rss.xml"
+        href=`${BASE_URL}/rss.xml`
         target="_blank"
         class="mx-3"
         aria-label="RSS Feed"
