@@ -8,12 +8,12 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://jackandrewg.github.io/',
-  base: 'my-portfolio',
+  site: 'https://jackandrewg.github.io',
+  base: '/my-portfolio',
   build: {
-    assetsPrefix: './'
+    // assetsPrefix: './'
+    assets: 'assets'
   },
-  // include: ['/dist/_astro/*.css'],
   integrations: [mdx(), sitemap(), tailwind(), image(
     {
       serviceEntryPoint: '@astrojs/image/sharp',
