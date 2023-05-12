@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = 'JackAndrewG Portfolio';
 export const SITE_DESCRIPTION = 'Personal Website by JackAndrewG with Project Section, CV Section, Paginated Blog, RSS Feed, SEO Friendly, Visual themes and Responsive Desing.';
-export const BASE_URL = '/my-first-portfolio';
+export const BASE_URL = '/my-portfolio';

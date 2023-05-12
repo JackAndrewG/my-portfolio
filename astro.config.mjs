@@ -9,10 +9,12 @@ import image from "@astrojs/image";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://jackandrewg.github.io/',
-  build: {
-    assets: '_assets',
-    assetsPrefix: '.'
-  },
+  base: './dist',
+  // build: {
+    // assetsPrefix: '\dist',
+    // outDir: '/dist',
+  // },
+  // include: ['/dist/_astro/*.css'],
   integrations: [mdx(), sitemap(), tailwind(), image(
     {
       serviceEntryPoint: '@astrojs/image/sharp',
