@@ -2,4 +2,4 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 export const SITE_TITLE = 'JackAndrewG Portfolio';
-export const SITE_DESCRIPTION = 'Personal Website by JackAndrewG with Project Section, CV Section, Paginated Blog, RSS Feed, SEO Friendly, Visual themes and Responsive Desing.';
+export const SITE_DESCRIPTION = 'Welcome to my portfolio! I am a skilled software developer with expertise in backend development, mobile app development, and web design. Explore my projects showcasing my proficiency in utilizing technologies like MongoDB, Node.js, React, Angular, Vue.js, and Flutter. With a strong focus on agile methodologies and continuous integration/continuous delivery (CI/CD), I strive to deliver high-quality solutions. Get a glimpse of my versatile skills, problem-solving abilities, and passion for staying updated with the latest industry trends. Let\'s connect and discuss how I can contribute to your software development needs.';
