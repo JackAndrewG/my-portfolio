@@ -1,3 +1,35 @@
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
 }
+#code-container {
+    white-space: pre;
+    font-family: monospace;
+    font-size: 16px;
+    overflow: hidden;
+    color: #eac388;
+    background-color: #1e1f35;
+}
+
+.function-keyword {
+    color: #eb4c8a;
+}
+
+.function-name {
+    color: #4bcc8e;
+}
+
+.console-keyword {
+    color: #ffabd8;
+}
+
+.log-keyword {
+    color: #65e890;
+}
+
+.parentheses {
+    color: #f8a52e;
+}
+
+.curly-braces {
+    color: #ffcb16;
+}
