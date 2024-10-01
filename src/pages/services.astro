@@ -5,44 +5,50 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title="Projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Services Offered</div>
+    <div class="text-3xl w-full font-bold mb-5">Servicios ofertados</div>
   </div>
 
   <HorizontalCard
+    title="Scrum Master"
+    img="/scrum_master.png"
+    desc= "Liderazgo de equipos de desarrollo, implementación de metodologías ágiles, aseguramiento de la calidad y entrega de proyectos en tiempo y forma."
+    badge="Jira, Scrum, Agile"
+  />
+  <HorizontalCard
     title="Backend Developer"
     img="/backend.png"
-    desc="Desarrollo de microservicios, API's, server logic, conexiones con bases de datos y 3rd party connections."
-    badge="NodeJs, Express, Django"
+    desc="Desarrollo de micro-servicios, APIs, lógica de servidores, conexiones con bases de datos e integración con servicios de terceros"
+    badge="Node, Django, Lambdas, NestJS, Spring Boot"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Frontend Developer"
     img="/frontend.png"
-    desc="Desarrollo de sitios web single page application (SPA), server sider render (SSR), landing pages, etc."
-    badge="Vue, React, Angular, Bootstrap"
+    desc="Desarrollo de sitios web single page application (SPA), server side render (SSR), landing pages, e-commerce."
+    badge="Vue, React, Angular, Supabase, Django"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Mobile Developer"
     img="/mobile_development.png"
-    desc="Desarrollo de apliaciones móviles para android & iOS."
-    badge="Dart, Flutter"
+    desc="Desarrollo de aplicaciones móviles para android & iOS."
+    badge="Dart, Flutter, React Native"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Database Manager"
     img="/database_manager.png"
-    desc="Arquitectura de bases de datos, mantenimiento, consultas y triggering."
-    badge="MongoDB, PostgreSQL, Redis, Sqlite"
+    desc="Arquitectura de bases de datos, mantenimiento, querying, triggering, functions"
+    badge="MongoDB, PostgreSQL, MySQL, DynamoDB, Redis"
   />
   <HorizontalCard
     title="Cloud Engineer"
     img="/cloud.png"
-    desc="Application deployer, logger watcher, configuración de servidores y servicios en la nube."
+    desc="despliegue de servicios en la nube, configuración de servidores y servicios en la nube."
     badge="Linux Server, Google Cloud, AWS Cloud"
   />
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Known Languages</div>
+    <div class="text-3xl w-full font-bold mb-5">Lenguajes de programación dominados</div>
   </div>
 
   <pre id="code-container"></pre>
