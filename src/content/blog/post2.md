@@ -2,7 +2,7 @@
 title: "Optimización en la Gestión de Facturas: Identificación de Saltos de Secuencia en SMO"
 description: "Descubre cómo SMO ha implementado una solución innovadora para identificar y gestionar saltos de secuencia en facturas, optimizando la administración comercial."
 pubDate: "Mar 22 2025"
-heroImage: "/posts/post2/cover.jpg"
+heroImage: "/my-portfolio/posts/post2/cover.jpg"
 badge: "Innovación 🚀"
 ---
 
