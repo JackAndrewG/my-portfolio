@@ -33,14 +33,14 @@ Como parte del equipo de desarrollo de SMO recibimos la solicitud de implementar
 - **Planificación de proyecto:** Se establecieron hitos y se asignaron tareas a los miembros del equipo.
 
 <div style="text-align: center; solid #ccc; padding: 10px; width: 40%; margin: auto;">
-  <img src="/posts/post2/planning.png" alt="Planificación de proyecto" style="max-width: 100%; height: auto;">
+  <img src="/my-portfolio/posts/post2/planning.png" alt="Planificación de proyecto" style="max-width: 100%; height: auto;">
 </div>
 
 - **Análisis de Datos:** Se realizó un análisis de los datos históricos para identificar patrones y tendencias.
 - **Diagramación de la arquitectura:** Se diseñó una nueva arquitectura para soportar la funcionalidad.
 
 <div style="text-align: center; solid #ccc; padding: 10px; width: 40%; margin: auto;">
-  <img src="/posts/post2/architecture.png" alt="Planificación de proyecto" style="max-width: 100%; height: auto;">
+  <img src="/my-portfolio/posts/post2/architecture.png" alt="Planificación de proyecto" style="max-width: 100%; height: auto;">
 </div>
 
 - **Implementación de Funciones Serverless:** Se desarrollaron funciones serverless utilizando AWS Lambda para automatizar la detección de secuenciales faltantes y la generación de reportes. Estas funciones se integraron con otros servicios de AWS, como DynamoDB y EventBridge, para garantizar un procesamiento eficiente y escalable de los datos.

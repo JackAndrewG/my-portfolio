@@ -2,7 +2,7 @@
 title: "Picker abre mercado en México y crece exponencialmente en 2022"
 description: "Según su CEO, Picker incrementó sus ganancias en hasta 10 veces en 2022. La empresa ha tenido un crecimiento de envíos superiores a los 50.000 por mes."
 pubDate: "May 14 2023"
-heroImage: "/picker.png"
+heroImage: "/my-portfolio/picker.png"
 badge: "Nuevo"
 ---
 
