@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Turnero QR para Multicines" description="Sistema de turnos con validación QR y dashboard en tiempo real para Multicines.">
+  <article class="prose max-w-none">
+    <a href="/my-portfolio/projects/">← Volver a proyectos</a>
+    <h1>Turnero QR para Multicines</h1>
+    <p>Sistema para validar códigos QR y mostrar el estado de los turnos en una pantalla pública, integrado con los servicios existentes de Multicines.</p>
+
+    <h2>El reto y mi participación</h2>
+    <p>Participé en el análisis de requisitos y desarrollé la solución desde cero. Al revisar la documentación y los endpoints del proveedor, identifiqué que el sistema externo ya gestionaba parte de la información de turnos. Comuniqué el hallazgo al project manager y participamos en reuniones con el cliente para ajustar el flujo e integrar esa información.</p>
+
+    <h2>La solución</h2>
+    <ul>
+      <li>Escaneo y validación de códigos QR contra la API externa, con prevención de duplicados y manejo de excepciones mediante un catálogo de errores.</li>
+      <li>Recepción de cambios de estado mediante webhooks y actualización automática del dashboard con Supabase Realtime.</li>
+      <li>Visualización de turnos pendientes, en curso, por retirar y finalizados, con animaciones y alertas sonoras para anunciar los cambios.</li>
+      <li>Vistas administrativas con control de acceso y pantallas de escaneo preparadas para operar como kioscos.</li>
+      <li>Configuración de versiones desde la base de datos para actualizar las pantallas sin requerir un refresco manual.</li>
+    </ul>
+
+    <h2>Aporte</h2>
+    <p>El análisis permitió alinear los requisitos con el sistema del proveedor y evitar duplicar funcionalidad. La solución contempló tanto la experiencia del público como la operación y el mantenimiento posterior de las pantallas.</p>
+    <p><strong>Tecnologías:</strong> Supabase, Realtime, APIs, webhooks y escaneo QR.</p>
+  </article>
+</BaseLayout>

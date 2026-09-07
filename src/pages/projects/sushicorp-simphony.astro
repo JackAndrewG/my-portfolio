@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Oracle Simphony POS · SushiCorp" description="Integración de Oracle Simphony POS con el e-commerce de SushiCorp: sincronización de menús y locales e inyección de órdenes.">
+  <article class="prose max-w-none">
+    <a href="/my-portfolio/projects/">← Volver a proyectos</a>
+    <h1>Integración de Oracle Simphony POS con SushiCorp</h1>
+    <p>Integración mediante APIs para conectar Oracle Simphony POS con la web y la aplicación de SushiCorp durante la migración de su sistema de punto de venta.</p>
+
+    <h2>El reto y mi participación</h2>
+    <p>Participé en reuniones con SushiCorp y el equipo de Oracle, analicé los contratos de las APIs y diseñé e implementé los flujos de sincronización e inyección de órdenes. El trabajo requirió adaptar la información del POS a los contratos del e-commerce y coordinar decisiones sobre productos, modificadores, categorías y métodos de pago.</p>
+
+    <h2>La solución</h2>
+    <ul>
+      <li>Sincronización de menús, precios, impuestos e información de locales para los canales de delivery y retiro en tienda.</li>
+      <li>Autenticación OAuth 2.0 con renovación de tokens próxima a su vencimiento.</li>
+      <li>Actualizaciones mediante webhooks con una ventana de espera para agrupar notificaciones y evitar solicitudes excesivas al e-commerce.</li>
+      <li>Sincronización diaria como mecanismo de reconciliación, con colas para distribuir las solicitudes y opciones de sincronización bajo demanda.</li>
+      <li>Inyección de órdenes con identificadores de correlación y deduplicación, complementada con registros de procesamiento en DynamoDB para controlar la idempotencia.</li>
+      <li>Transformación de categorías, productos y modificadores, propagación de metadatos entre servicios y mapeo configurable de métodos de pago.</li>
+      <li>Logs, métricas y snapshots de la información recibida para diagnosticar inconsistencias y coordinar su resolución con el cliente y el proveedor.</li>
+    </ul>
+
+    <h2>Aporte</h2>
+    <p>La integración conectó ambos sentidos del flujo: información del POS hacia el e-commerce y órdenes del e-commerce hacia el POS. El diseño incorporó controles frente a duplicados, mecanismos de recuperación y herramientas de diagnóstico para facilitar su operación.</p>
+    <p><strong>Tecnologías:</strong> APIs, OAuth 2.0, webhooks, AWS, EventBridge, DynamoDB y colas de procesamiento.</p>
+  </article>
+</BaseLayout>

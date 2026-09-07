@@ -10,6 +10,14 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   </div>
 
   <HorizontalCard
+    title="Turnero QR para Multicines"
+    desc="Sistema de turnos con escaneo y validación de códigos QR, prevención de duplicados y dashboard público actualizado en tiempo real. Incluye administración con control de acceso, alertas visuales y sonoras, y actualización remota de pantallas."
+    url="/my-portfolio/projects/multicines/"
+    target="_self"
+    badges='["Supabase", "Realtime", "API", "Webhooks", "QR"]'
+  />
+
+  <HorizontalCard
     title="Anefi App"
     img="/my-portfolio/anefi_app.png"
     desc="Aplicación móvil para la inversión de fondos y fideicomisos en Ecuador."
@@ -35,6 +43,14 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   <div>
     <div class="text-3xl w-full font-bold mb-5">Proyectos Backend</div>
   </div>
+
+  <HorizontalCard
+    title="Integración de Oracle Simphony POS con SushiCorp"
+    desc="Integración del POS con la web y app de SushiCorp para sincronizar menús, locales y canales de venta, e inyectar órdenes. Implementé autenticación OAuth 2.0, webhooks, sincronización programada, colas e idempotencia con DynamoDB."
+    url="/my-portfolio/projects/sushicorp-simphony/"
+    target="_self"
+    badges='["API", "OAuth 2.0", "Webhooks", "AWS", "EventBridge", "DynamoDB"]'
+  />
 
   <HorizontalCard
     title="Integración para Chinawok Chile con Justo" 
