@@ -1,3 +1,8 @@
+
+[32m@astrojs/sitemap:[0m `sitemap-index.xml` is created.
+
+03:37:38 PM [build] 20 page(s) built in 1.41s
+03:37:38 PM [build] Complete!
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
@@ -59,12 +64,12 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 </BaseLayout>
 
 <style>
-  .code-window { margin: 1.25rem 0 2rem; overflow: hidden; border: 1px solid #263142; border-radius: .8rem; background: #0f172a; box-shadow: 0 18px 35px #0f172a2e; }
+  .code-window { position: relative; margin: 1.25rem 0 2rem; overflow: hidden; border: 1px solid #263142; border-radius: .8rem; background: #0f172a; box-shadow: 0 18px 35px #0f172a2e; }
   .code-window-bar { display: flex; align-items: center; gap: .45rem; padding: .65rem .9rem; background: #1e293b; color: #94a3b8; font: 600 .8rem/1 system-ui, sans-serif; }
   .code-window-title { margin-left: .5rem; letter-spacing: .02em; }
   .dot { width: .7rem; height: .7rem; border-radius: 50%; }
   .dot-red { background: #fb7185; } .dot-yellow { background: #fbbf24; } .dot-green { background: #34d399; }
-  #code-container { min-height: 8rem; margin: 0; padding: 1.25rem 1.4rem; color: #e2e8f0; font: 500 1rem/1.7 ui-monospace, SFMono-Regular, Menlo, monospace; white-space: pre-wrap; }
-  #code-container::before { content: "01  02  03  04"; display: block; margin-bottom: .35rem; color: #475569; font-size: .72rem; letter-spacing: .18em; }
+  #code-container { position: relative; min-height: 8rem; margin: 0; padding: 1.25rem 1.4rem 1.25rem 3.6rem; color: #e2e8f0; font: 500 1rem/1.7 ui-monospace, SFMono-Regular, Menlo, monospace; white-space: pre-wrap; }
+  #code-container::before { content: "01\A02\A03\A04"; position: absolute; top: 1.25rem; left: 1.4rem; color: #475569; font-size: .72rem; line-height: 1.7; letter-spacing: .08em; white-space: pre; }
   :global(.function-keyword) { color: #c084fc; } :global(.parentheses), :global(.curly-braces) { color: #fbbf24; } :global(.console-keyword) { color: #38bdf8; } :global(.log-keyword) { color: #4ade80; }
 </style>
