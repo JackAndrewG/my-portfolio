@@ -101,6 +101,31 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     <div class="text-3xl w-full font-bold">Habilidades</div>
   </div>
 
+  <section class="skills-radar mb-10" aria-labelledby="skills-radar-title">
+    <div class="skills-radar-copy">
+      <h3 id="skills-radar-title">Mapa de dominio tecnológico</h3>
+      <p>
+        Nivel orientativo basado en la frecuencia, responsabilidad y profundidad de mi participación en los proyectos del portafolio. El radar destaca las áreas donde he tomado decisiones técnicas, construido soluciones y validado entregas de punta a punta.
+      </p>
+      <p class="skills-radar-legend"><span>1</span> exposición · <span>3</span> aplicado · <span>5</span> dominio avanzado</p>
+    </div>
+    <div class="skills-radar-chart">
+      <svg viewBox="0 0 420 420" role="img" aria-labelledby="radar-title radar-desc">
+        <title id="radar-title">Radar de habilidades tecnológicas</title>
+        <desc id="radar-desc">Comparación orientativa de ocho áreas técnicas, con mayor fortaleza en backend, nube e integraciones.</desc>
+        <g class="radar-grid">
+          <polygon points="210,42 329,91 378,210 329,329 210,378 91,329 42,210 91,91" />
+          <polygon points="210,75 306,114 345,210 306,306 210,345 114,306 75,210 114,114" />
+          <polygon points="210,108 282,137 312,210 282,282 210,312 138,282 108,210 138,138" />
+          <polygon points="210,141 258,160 279,210 258,260 210,279 162,260 141,210 162,160" />
+          <line x1="210" y1="210" x2="210" y2="42" /><line x1="210" y1="210" x2="329" y2="91" /><line x1="210" y1="210" x2="378" y2="210" /><line x1="210" y1="210" x2="329" y2="329" /><line x1="210" y1="210" x2="210" y2="378" /><line x1="210" y1="210" x2="91" y2="329" /><line x1="210" y1="210" x2="42" y2="210" /><line x1="210" y1="210" x2="91" y2="91" />
+        </g>
+        <polygon class="radar-area" points="210,59 305,115 354,210 305,305 210,337 115,305 66,210 115,115" />
+        <g class="radar-labels"><text x="210" y="24">Backend</text><text x="337" y="78">AWS / Cloud</text><text x="389" y="215">Integraciones</text><text x="337" y="352">Datos</text><text x="210" y="404">Mobile</text><text x="83" y="352">Frontend</text><text x="8" y="215">QA</text><text x="73" y="78">Liderazgo</text></g>
+      </svg>
+    </div>
+  </section>
+
   <ul class="list-disc md:columns-5 columns-2 mx-6">
     <li>Node</li>
     <li>Nest</li>
@@ -118,5 +143,29 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     <li>AWS Cloud (EC2, ECS, SAM, etc)</li>
     <li>Google Cloud (Instances, Firebase, Analytics)</li>
     <li>Linux Server</li>
+    <li>TypeScript</li>
+    <li>Next.js</li>
+    <li>React Native</li>
+    <li>REST APIs</li>
+    <li>Webhooks</li>
+    <li>OAuth 2.0</li>
+    <li>AWS Bedrock</li>
+    <li>Supabase Realtime</li>
+    <li>EventBridge</li>
+    <li>DynamoDB</li>
+    <li>QA y revisión de PR</li>
   </ul>
+
+  <style>
+    .skills-radar { display: grid; grid-template-columns: 1fr 420px; gap: 2rem; align-items: center; padding: 1.5rem; border: 1px solid #e5e7eb; border-radius: 1rem; background: linear-gradient(135deg, #fafafa, #fff); }
+    .skills-radar-copy h3 { margin: 0 0 .75rem; font-size: 1.4rem; }
+    .skills-radar-copy p { margin: 0 0 .75rem; line-height: 1.55; }
+    .skills-radar-legend { color: #4b5563; font-size: .9rem; }
+    .skills-radar-legend span { display: inline-grid; place-items: center; width: 1.35rem; height: 1.35rem; margin: 0 .15rem; border-radius: 999px; background: #2563eb; color: #fff; font-weight: 700; }
+    .skills-radar-chart { max-width: 420px; margin: auto; }
+    .radar-grid polygon, .radar-grid line { fill: none; stroke: #cbd5e1; stroke-width: 1; }
+    .radar-area { fill: #2563eb; fill-opacity: .28; stroke: #1d4ed8; stroke-width: 3; }
+    .radar-labels { font-size: 12px; font-weight: 600; fill: #1f2937; text-anchor: middle; }
+    @media (max-width: 700px) { .skills-radar { grid-template-columns: 1fr; } .skills-radar-chart { width: 100%; } }
+  </style>
 </BaseLayout>
