@@ -110,7 +110,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       <p class="skills-radar-legend"><span>1</span> exposición · <span>3</span> aplicado · <span>5</span> dominio avanzado</p>
     </div>
     <div class="skills-radar-chart">
-      <svg viewBox="0 0 420 420" role="img" aria-labelledby="radar-title radar-desc">
+      <svg class="radar-svg" width="420" height="420" viewBox="0 0 420 420" role="img" aria-labelledby="radar-title radar-desc">
         <title id="radar-title">Radar de habilidades tecnológicas</title>
         <desc id="radar-desc">Comparación orientativa de ocho áreas técnicas, con mayor fortaleza en backend, nube e integraciones.</desc>
         <g class="radar-grid">
@@ -157,12 +157,12 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </ul>
 
   <style>
-    .skills-radar { display: grid; grid-template-columns: 1fr 420px; gap: 2rem; align-items: center; padding: 1.5rem; border: 1px solid #e5e7eb; border-radius: 1rem; background: linear-gradient(135deg, #fafafa, #fff); }
+    .skills-radar { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 420px); gap: 2rem; align-items: center; padding: 1.5rem; border: 1px solid #e5e7eb; border-radius: 1rem; background: linear-gradient(135deg, #fafafa, #fff); }
     .skills-radar-copy h3 { margin: 0 0 .75rem; font-size: 1.4rem; }
     .skills-radar-copy p { margin: 0 0 .75rem; line-height: 1.55; }
     .skills-radar-legend { color: #4b5563; font-size: .9rem; }
     .skills-radar-legend span { display: inline-grid; place-items: center; width: 1.35rem; height: 1.35rem; margin: 0 .15rem; border-radius: 999px; background: #2563eb; color: #fff; font-weight: 700; }
-    .skills-radar-chart { max-width: 420px; margin: auto; }
+    .skills-radar-chart { width: 100%; max-width: 420px; margin: auto; }\n    .radar-svg { display: block; width: 100%; height: auto; overflow: visible; }
     .radar-grid polygon, .radar-grid line { fill: none; stroke: #cbd5e1; stroke-width: 1; }
     .radar-area { fill: #2563eb; fill-opacity: .28; stroke: #1d4ed8; stroke-width: 3; }
     .radar-labels { font-size: 12px; font-weight: 600; fill: #1f2937; text-anchor: middle; }
