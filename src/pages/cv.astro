@@ -74,11 +74,18 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     <div class="text-3xl w-full font-bold">Certificados</div>
   </div>
 
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li class="certificate-honors" style="list-style-type: none;">
+  <div class="certificate-honors mb-5">
+    <div>
       <span class="honors-kicker">Cuadro de honor</span>
       <img src="https://d1.awsstatic.com/certification/badges/AWS-Certified-Cloud-Practitioner_badge_150x150.17da917fbddc5383838d9f8209d2030c8d99f31e.png" alt="Insignia AWS Certified Cloud Practitioner" class="inline-block w-24 h-24 mr-2" />
       <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/d6820408d48a4e77852dc211ac5c55eb" target="_blank" rel="noreferrer">AWS Certified Cloud Practitioner (credencial más reciente)</a>
+    </div>
+  </div>
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li style="list-style-type: none;">
+      <span class="cert-status">En proceso</span>
+      <span class="cert-placeholder" aria-hidden="true">AWS</span>
+      <strong>AWS Certified Developer – Associate</strong>
     </li>
     <li style="list-style-type: none;">
       <img src="https://d1.awsstatic.com/certification/badges/AWS-Certified-Cloud-Practitioner_badge_150x150.17da917fbddc5383838d9f8209d2030c8d99f31e.png" alt="AWS Certified Cloud Practitioner Icon" class="inline-block w-24 h-24 mr-2" />
@@ -166,7 +173,9 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <style>
     .certificate-honors { display: flex; align-items: center; gap: .75rem; padding: 1rem; border: 2px solid #f59e0b; border-radius: .9rem; background: linear-gradient(120deg, #fffbeb, #fff7ed); box-shadow: 0 8px 20px #f59e0b22; }
-    .certificate-honors .honors-kicker { align-self: flex-start; color: #92400e; font-size: .75rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+    .certificate-honors .honors-kicker { display: block; margin-bottom: .35rem; color: #92400e; font-size: .75rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+    .cert-status { display: inline-block; margin-right: .6rem; padding: .25rem .55rem; border-radius: 999px; background: #e0f2fe; color: #075985; font-size: .75rem; font-weight: 700; }
+    .cert-placeholder { display: inline-grid; place-items: center; width: 4rem; height: 4rem; margin-right: .6rem; border-radius: .5rem; background: #e5e7eb; color: #4b5563; font-weight: 800; }
     .skills-radar { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 420px); gap: 2rem; align-items: center; padding: 1.5rem; border: 1px solid #e5e7eb; border-radius: 1rem; background: linear-gradient(135deg, #fafafa, #fff); }
     .skills-radar-copy h3 { margin: 0 0 .75rem; font-size: 1.4rem; }
     .skills-radar-copy p { margin: 0 0 .75rem; line-height: 1.55; }
