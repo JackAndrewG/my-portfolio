@@ -2,6 +2,7 @@
 title: "Anefi acelera su transformación digital"
 description: "La renovación de los canales digitales de Anefi acercó sus fondos de inversión a más clientes mediante una nueva web y una aplicación transaccional."
 pubDate: "Apr 27 2022"
+updatedDate: "Sep 13 2026"
 heroImage: "/my-portfolio/anefi.webp"
 badge: "Transformación digital"
 ---
