@@ -75,6 +75,11 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li class="certificate-honors" style="list-style-type: none;">
+      <span class="honors-kicker">Cuadro de honor</span>
+      <img src="https://d1.awsstatic.com/certification/badges/AWS-Certified-Cloud-Practitioner_badge_150x150.17da917fbddc5383838d9f8209d2030c8d99f31e.png" alt="Insignia AWS Certified Cloud Practitioner" class="inline-block w-24 h-24 mr-2" />
+      <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/d6820408d48a4e77852dc211ac5c55eb" target="_blank" rel="noreferrer">AWS Certified Cloud Practitioner (credencial más reciente)</a>
+    </li>
     <li style="list-style-type: none;">
       <img src="https://d1.awsstatic.com/certification/badges/AWS-Certified-Cloud-Practitioner_badge_150x150.17da917fbddc5383838d9f8209d2030c8d99f31e.png" alt="AWS Certified Cloud Practitioner Icon" class="inline-block w-24 h-24 mr-2" />
       <a
@@ -121,12 +126,15 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
           <line x1="210" y1="210" x2="210" y2="42" /><line x1="210" y1="210" x2="329" y2="91" /><line x1="210" y1="210" x2="378" y2="210" /><line x1="210" y1="210" x2="329" y2="329" /><line x1="210" y1="210" x2="210" y2="378" /><line x1="210" y1="210" x2="91" y2="329" /><line x1="210" y1="210" x2="42" y2="210" /><line x1="210" y1="210" x2="91" y2="91" />
         </g>
         <polygon class="radar-area" points="210,59 305,115 354,210 305,305 210,337 115,305 66,210 115,115" />
+        <g class="radar-points">
+          <circle cx="210" cy="59" r="7" tabindex="0"><title>Backend: 8 proyectos</title></circle><circle cx="305" cy="115" r="7" tabindex="0"><title>AWS / Cloud: 7 proyectos</title></circle><circle cx="354" cy="210" r="7" tabindex="0"><title>Integraciones: 10 proyectos</title></circle><circle cx="305" cy="305" r="7" tabindex="0"><title>Datos: 7 proyectos</title></circle><circle cx="210" cy="337" r="7" tabindex="0"><title>Mobile: 5 proyectos</title></circle><circle cx="115" cy="305" r="7" tabindex="0"><title>Frontend: 6 proyectos</title></circle><circle cx="66" cy="210" r="7" tabindex="0"><title>QA: 6 proyectos</title></circle><circle cx="115" cy="115" r="7" tabindex="0"><title>Liderazgo: 6 proyectos</title></circle>
+        </g>
         <g class="radar-labels"><text x="210" y="24">Backend</text><text x="337" y="78">AWS / Cloud</text><text x="389" y="215">Integraciones</text><text x="337" y="352">Datos</text><text x="210" y="404">Mobile</text><text x="83" y="352">Frontend</text><text x="8" y="215">QA</text><text x="73" y="78">Liderazgo</text></g>
       </svg>
     </div>
   </section>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
+  <ul class="skills-list md:columns-5 columns-2 mx-6">
     <li>Node</li>
     <li>Nest</li>
     <li>Lambdas</li>
@@ -157,15 +165,23 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </ul>
 
   <style>
+    .certificate-honors { display: flex; align-items: center; gap: .75rem; padding: 1rem; border: 2px solid #f59e0b; border-radius: .9rem; background: linear-gradient(120deg, #fffbeb, #fff7ed); box-shadow: 0 8px 20px #f59e0b22; }
+    .certificate-honors .honors-kicker { align-self: flex-start; color: #92400e; font-size: .75rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
     .skills-radar { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 420px); gap: 2rem; align-items: center; padding: 1.5rem; border: 1px solid #e5e7eb; border-radius: 1rem; background: linear-gradient(135deg, #fafafa, #fff); }
     .skills-radar-copy h3 { margin: 0 0 .75rem; font-size: 1.4rem; }
     .skills-radar-copy p { margin: 0 0 .75rem; line-height: 1.55; }
     .skills-radar-legend { color: #4b5563; font-size: .9rem; }
     .skills-radar-legend span { display: inline-grid; place-items: center; width: 1.35rem; height: 1.35rem; margin: 0 .15rem; border-radius: 999px; background: #2563eb; color: #fff; font-weight: 700; }
-    .skills-radar-chart { width: 100%; max-width: 420px; margin: auto; }\n    .radar-svg { display: block; width: 100%; height: auto; overflow: visible; }
+    .skills-radar-chart { width: 100%; max-width: 420px; margin: auto; }
+    .radar-svg { display: block; width: 100%; height: auto; overflow: visible; }
     .radar-grid polygon, .radar-grid line { fill: none; stroke: #cbd5e1; stroke-width: 1; }
     .radar-area { fill: #2563eb; fill-opacity: .28; stroke: #1d4ed8; stroke-width: 3; }
+    .radar-points circle { fill: #1d4ed8; stroke: #fff; stroke-width: 3; cursor: help; transition: transform .15s, fill .15s; transform-box: fill-box; transform-origin: center; }
+    .radar-points circle:hover, .radar-points circle:focus { fill: #f97316; transform: scale(1.5); outline: none; }
     .radar-labels { font-size: 12px; font-weight: 600; fill: #1f2937; text-anchor: middle; }
-    @media (max-width: 700px) { .skills-radar { grid-template-columns: 1fr; } .skills-radar-chart { width: 100%; } }
+    .skills-list { list-style: none; padding-left: 0; }
+    .skills-list li { break-inside: avoid; margin-bottom: .35rem; }
+    .skills-list li::before { content: "◆"; display: inline-block; margin-right: .45rem; color: #2563eb; font-size: .7em; vertical-align: middle; }
+    @media (max-width: 700px) { .skills-radar { grid-template-columns: 1fr; } .skills-radar-chart { width: 100%; } .certificate-honors { flex-wrap: wrap; } }
   </style>
 </BaseLayout>
